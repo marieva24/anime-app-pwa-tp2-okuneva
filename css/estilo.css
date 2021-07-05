@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'SuisseBold';
+    src: url('../res/fonts/SuisseIntl-Bold.eot');
+    src: url('../res/fonts/SuisseIntl-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../res/fonts/SuisseIntl-Bold.woff2') format('woff2'),
+        url('../res/fonts/SuisseIntl-Bold.woff') format('woff'),
+        url('../res/fonts/SuisseIntl-Bold.ttf') format('truetype'),
+        url('../res/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold') format('svg');
+}
+@font-face {
+    font-family: 'SuisseMed';
+    src: url('../res/fonts/SuisseIntl-Medium.eot');
+    src: url('../res/fonts/SuisseIntl-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../res/fonts/SuisseIntl-Medium.woff2') format('woff2'),
+        url('../res/fonts/SuisseIntl-Medium.woff') format('woff'),
+        url('../res/fonts/SuisseIntl-Medium.ttf') format('truetype'),
+        url('../res/fonts/SuisseIntl-Medium.svg#SuisseIntl-Medium') format('svg');
+}
+@font-face {
+    font-family: 'SuisseReg';
+    src: url('../res/fonts/SuisseIntl-Regular.eot');
+    src: url('../res/fonts/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../res/fonts/SuisseIntl-Regular.woff2') format('woff2'),
+        url('../res/fonts/SuisseIntl-Regular.woff') format('woff'),
+        url('../res/fonts/SuisseIntl-Regular.ttf') format('truetype'),
+        url('../res/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular') format('svg');
+}
+
+/*https://coolors.co/7400b8-6930c3-5e60ce-5390d9-4ea8de-48bfe3-56cfe1-64dfdf-72efdd-80ffdb
+https://coolors.co/6f2dbd-a663cc-b298dc-b8d0eb-b9faf8
+#6930C3; #4EA8DE; #64DFDF; #5D6B83;  #282f3d
+#6f2dbd; #a663cc; #b298dc; rgba (178, 152, 220, 0.7)#b8d0eb; #b9faf8;*/ 
+:root {
+    --violet: #6f2dbd;
+    --violettr: rgba(111, 45, 189, 0.7);
+    --rosa: #a663cc;
+    --lila:#b298dc;
+    --lilatr: rgba(172, 152, 220, 0.5);
+    --lilatr:rgba(178, 152, 220, 0.3);
+    --blanco: #ffffff;
+    --azul:#b9faf8;
+    --gris: #282f3d;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'SuisseReg';
+    font-size: 1.1em;
+    color: var(--blanco);
+}
+h1, h2, h3 {
+	font-family: 'SuisseBold';
+	font-size: 1.7em;
+    margin: 0.7em 0;
+}
+#result h2 {
+    color: #000000;
+    word-break: break-word;
+}
+#result img {
+    width: 100%;
+    height: 20em;
+}
+#result p{
+    word-break: break-word;
+}
+#result p .score{
+    color: var(--violet);
+}
+#result a{
+    color: var(--violet);
+    border-color: var(--blanco);
+    border-radius: 7px;
+    font-family: 'SuisseMed';
+    font-size: 1.1em;
+}
+.img-anime{
+    order: 1;
+}
+.animecard{
+    overflow: hidden;
+    border-radius: 0.875em;
+    box-shadow: 2px 2px 8px var(--violettr);
+}
+/*-----juego----*/
+.grid {
+    width: 294px;
+    height: 294px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: var(--azul);
+    height: 96px;
+    width: 96px;
+    border: solid var(--lila) 1px;
+}
+.mole {
+    background-image: url("../res/img/mole.jpg");
+    background-size: cover;
+}
+.tarea{
+    font-size: 0.8em;
+}
+.juego{
+    min-height: 100vh;  
+    background-color: var(--lilatr);    
+    color:var(--gris);
+    font-family: 'SuisseReg';
+}
+.juego-cont h2, p{
+    font-size: 1.2em;
+}
+
+.juego-cont{
+    font-size: 1.2em;
+    border-radius: 7px;
+    box-shadow: 2px 2px 8px var(--violettr);
+}
+.instruction{
+    font-size: 1em;
+}
+/*-fin--de---juego----*/
+
+.logo{
+    background: url("../res/img/logo-anime.svg") no-repeat 48px left;
+    font-size: 1.7em;
+    height:4rem;
+    color:white; 
+    position: absolute;
+    width: 230px;
+    line-height: 1.6rem;
+}
+.navbar-nav{
+    line-height: 1.5rem;
+}
+.navbar-collapse{
+    max-width: 570px;
+}
+.logo-link {
+  color: var(--blanco);
+}
+header {
+    padding: 7px;
+    text-align: center;
+    color: var(--blanco);
+}
+.main{
+	min-height: 100vh;  
+    background-color: var(--lilatr);    
+    color:var(--gris);
+}
+.bg1{
+    background-color: var(--violet);
+}
+.bg2{
+    background-color: var(--azul);
+    color: var(--rosa);
+}
+.bg3{
+    background-color: var(--lilatr);
+    color: var(--rosa);
+}
+.buscar form {
+	padding: 1.1em 0;
+}
+input.buscar{
+	padding: 0.45em 1em;
+	border-radius: 7px;
+	border: solid 1px;
+	border-color: var(--blanco);
+	outline: none;
+	font-size: 105%;
+	font-family: inherit;
+}
+.buscar button{
+	border: none;
+	border-radius: 7px;
+	height: 46px;
+	width: 46px;
+	outline: none;
+	padding: 0;
+}
+button{
+	background:var(--blanco); 
+}
+button:hover{
+	background:var(--lila);
+}
+#name{
+    color: #000000;
+}
+#genero{
+    font-weight: bold;
+}
+#buscar-home{
+    background:var(--azul);
+    color:var(--violet);
+    border-color: var(--blanco);
+    border-radius: 7px;
+    font-family: 'SuisseMed';
+    font-size: 1.3em;
+}
+footer {
+    background-color: var(--azul);
+}
+body.offline .offline-banner {
+    transition: all 0.5s;
+}
+body:not(.offline) .offline-banner {
+    height: 32px;
+    margin-top: -38px;
+    transition: all 0.5s;
+}
+.offline-banner{
+    width:100%;
+}
+.offline-banner div h2{
+    margin:0;
+}
+.offline-banner-html{
+    width:100%;
+}
+.btn-rss {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+    margin: auto;
+    width: 2em;
+    height: 2em;
+}
+.fb {
+    background-image: url(../res/img/icon/facebook.svg);
+}
+
+.inst {
+    background-image: url(../res/img/icon/instagram.svg);
+}
+
+.youtube {
+    background-image: url(../res/img/icon/youtube.svg);
+}
+.bienvenido{
+    max-width: 450px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: var(--violet);
+}
+p{
+    color: #000000;
+    font-size: 0.9em;
+}
+.score{
+    font-weight: bold;
+}
+.library{
+    background-color: var(--lilatr);
+}
+details{
+    font-size: 0.7em;
+}

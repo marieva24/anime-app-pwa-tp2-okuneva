@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Okuneva Marina DWN3A PWA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="offline-banner">
+    <div class="row m-auto text-center alert-danger bg3">
+      <h2 class="h5 p-2 col-12 m-0">Status: Offline</h2>
+    </div>
+    </div>
+ <header class="container-fluid bg1">
+      <!-- Fixed navbar -->
+      <nav class="navbar row navbar-expand-md navbar-dark bg-bg1 mt-3">
+        <a class="col-3 navbar-brand" href="anime.html">
+            <h1 class="logo d-block pl-5 mt-2">Animania</h1>
+        </a>
+        <!-- Fixed navbar -->
+        <button class="col-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-6 collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="anime.html">Anime<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+     <main class="library">
+         <section class="container-fluid buscar bg1">
+             <form id="formulario" class="form-row justify-content-center m-auto pl-3" >
+                <div class="col-8 col-md-5 col-lg-4">
+                     <input id="input" class="form-control mr-sm-2 buscar" name="input" type="text" placeholder="Buscar" aria-label="Search">
+                </div>
+                <div id="button" class="col-2">
+                     <button class="btn" type="submit">
+                        <svg fill="#6f2dbd" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="1.5rem" height="1.5rem">
+                        <path d="M 13.261719 14.867188 L 15.742188 17.347656 C 15.363281 18.070313 15.324219 18.789063 15.722656 19.1875 L 20.25 23.714844 C 20.820313 24.285156 22.0625 23.972656 23.015625 23.015625 C 23.972656 22.058594 24.285156 20.820313 23.714844 20.25 L 19.191406 15.722656 C 18.789063 15.324219 18.070313 15.363281 17.347656 15.738281 L 14.867188 13.261719 Z M 8.5 0 C 3.804688 0 0 3.804688 0 8.5 C 0 13.195313 3.804688 17 8.5 17 C 13.195313 17 17 13.195313 17 8.5 C 17 3.804688 13.195313 0 8.5 0 Z M 8.5 15 C 4.910156 15 2 12.089844 2 8.5 C 2 4.910156 4.910156 2 8.5 2 C 12.089844 2 15 4.910156 15 8.5 C 15 12.089844 12.089844 15 8.5 15 Z"/></svg>
+                     </button>
+                 </div>   
+              </form>
+           </section>
+
+        <section class="container">
+          <div id="result" class="row justify-content-around m-1">
+        </div>
+         <div class="col-lg-8 col-xs-11 m-auto">
+             <picture class="img-fluid p-2">            
+                  <source media="(max-width: 575px)" srcset="res/img/anime-homura-sm.png">
+                  <source media="(max-width: 767px)" srcset="res/img/anime-homura-md.png">
+                  <img class="d-block w-100 img-fluid" src="res/img/anime-homura-big.png" alt="Anime Homura">
+             </picture>
+             </div>
+             
+         </section>
+    </main>
+    <footer class="footer pt-3 pb-3 bg1">
+          <div class="container">
+            <div class="row text-center">
+                    <ul class="col-10 m-auto list-unstyled py-4">               
+                        <li class="mx-3 d-inline-block"><a class="btn-rss fb m-1" target="_blank" href="https://www.facebook.com/">facebook</a>
+                        </li>
+                        <li class="mx-3 d-inline-block"><a class="btn-rss inst m-1" target="_blank" href="https://www.instagram.com/">instagram</a>
+                        </li>
+                        <li class="mx-3 d-inline-block">
+                            <a class="btn-rss youtube m-1" target="_blank" href="https://youtube.com/home">youtube</a>
+                        </li>
+                    </ul>
+          <div id="alumno" class="col-12 text-center">
+            <details class="m-auto my-1">
+            <summary>Datos del alumno</summary>
+        
+                  <ul class="list-unstyled py-4">   
+                      <li><strong>Alumno:</strong> Okuneva Marina</li>
+                      <li><strong>Carrera:</strong> Diseño Web</li>
+                      <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
+                      <li><strong>Profesor:</strong> Gonzalo Rubino</li>
+                      <li><strong>Comisión:</strong> 3A; turno Noche</li>
+                      <li><strong>2021 &copy;</strong></li>
+                  </ul>
+            </details>
+        </div>
+        </div>
+    </footer>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register-sw.js"></script>
+    <script src="js/animania.js"></script>
+  </body>
+</html>
