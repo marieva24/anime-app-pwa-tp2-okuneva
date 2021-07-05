@@ -222,6 +222,20 @@ body:not(.offline) .offline-banner {
 .offline-banner div h2{
     margin:0;
 }
+body.offline .offline-banner-html {
+    transition: all 0.5s;
+}
+body:not(.offline) .offline-banner-html {
+    height: 32px;
+    margin-top: -38px;
+    transition: all 0.5s;
+}
+.offline-banner-html{
+    width:100%;
+}
+.offline-banner-html div h2{
+    margin:0;
+}
 .offline-banner-html{
     width:100%;
 }
