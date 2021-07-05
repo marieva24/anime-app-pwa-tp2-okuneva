@@ -10,6 +10,7 @@ function buscar(evento){
     //console.log(evento);
     evento.preventDefault();
     // guardamos la    const form = new FormData(this);
+    const form = new FormData(this);
     const busqueda = form.get("input");
     //console.log(busqueda);
     const url = "https://api.jikan.moe/v3";
@@ -21,8 +22,7 @@ function buscar(evento){
 }
  function datos(info){
      //console.log(info.results);
- 	const resultadoDeBusqueda = document.getElementById("result");
-
+   	const resultadoDeBusqueda = document.getElementById("result");
      console.log(resultadoDeBusqueda);
  	//Datos a mostrar:      <div class="col-12 bd-highlight p-2 text-center h-100 d-inline-block cardText justify-content-around">
     resultadoDeBusqueda.innerHTML = info.results
