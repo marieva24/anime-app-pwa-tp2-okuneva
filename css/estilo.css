@@ -163,16 +163,16 @@ details{
 }
 /*-----juego----*/
 .grid {
-    width: 294px;
-    height: 294px;
+    width: 288px;
+    height: 288px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square {
     background-color: var(--azul);
-    height: 96px;
-    width: 96px;
+    height: 94px;
+    width: 94px;
     border: solid var(--lila) 1px;
 }
 .mole {
@@ -188,14 +188,10 @@ details{
     color:var(--gris);
     font-family: 'SuisseReg';
 }
-.juego-cont h2, p{
-    font-size: 1.2em;
-}
-
 .juego-cont{
-    font-size: 1.2em;
+    font-size: 1.1em;
     border-radius: 7px;
-    box-shadow: 2px 2px 8px var(--violettr);
+    box-shadow: 2px 2px 6px var(--violettr);
 }
 .instruction{
     font-size: 1em;
@@ -261,4 +257,9 @@ footer {
 
 .youtube {
     background-image: url(../res/img/icon/youtube.svg);
+}
+@media screen and (max-width: 450px){
+    .juego-cont{
+    max-width: 305px;
+}
 }
