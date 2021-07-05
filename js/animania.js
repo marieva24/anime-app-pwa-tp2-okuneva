@@ -9,8 +9,7 @@ function paginaCargada(){
 function buscar(evento){
     //console.log(evento);
     evento.preventDefault();
-    // guardamos la 
-    const form = new FormData(this);
+    // guardamos la    const form = new FormData(this);
     const busqueda = form.get("input");
     //console.log(busqueda);
     const url = "https://api.jikan.moe/v3";
@@ -44,15 +43,6 @@ function buscar(evento){
     }).join("\n");
     
 }
-/*return `
-            <article class="card col-lg-3 col-md-3 col-sm-12 col-xs-12 justify-content-center card-body my-3 cardText ">
-                        <img src="${anime.image_url}" class="card-img-top img-fluid" alt="anime">    
-                        <h5 class="card-title mt-3">${anime.title}</h5>
-                        <p class="card-text">${anime.synopsis}</p>
-                        <p class="score">Score:${anime.score}</p>
-                        <a href="${anime.url}" class="btn btn-primary bg2" target="_blank">Link a la página</a>
-            </article>
-            `*/
 
 
 

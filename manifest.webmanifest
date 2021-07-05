@@ -4,7 +4,7 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/index.html",
-    "name": "animation",
+    "name": "Animania",
     "short_name": "AM",
     "icons": [
         {

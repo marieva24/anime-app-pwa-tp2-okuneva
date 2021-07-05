@@ -53,9 +53,85 @@ body {
 }
 h1, h2, h3 {
 	font-family: 'SuisseBold';
-	font-size: 1.7em;
+	font-size: 1.7em;s
     margin: 0.7em 0;
 }
+header {
+    padding: 7px;
+    text-align: center;
+    color: var(--blanco);
+}
+.main{
+    min-height: 100vh;  
+    background-color: var(--lilatr);    
+    color:var(--gris);
+}
+.bg1{
+    background-color: var(--violet);
+}
+.bg2{
+    background-color: var(--azul);
+    color: var(--rosa);
+}
+.bg3{
+    background-color: var(--lilatr);
+    color: var(--rosa);
+}
+.buscar form {
+    padding: 1.1em 0;
+}
+input.buscar{
+    padding: 0.45em 1em;
+    border-radius: 7px;
+    border: solid 1px;
+    border-color: var(--blanco);
+    outline: none;
+    font-size: 105%;
+    font-family: inherit;
+}
+.buscar button{
+    border: none;
+    border-radius: 7px;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    padding: 0;
+}
+button{
+    background:var(--blanco); 
+}
+button:hover{
+    background:var(--lila);
+}
+#buscar-home{
+    background:var(--azul);
+    color:var(--violet);
+    border-color: var(--blanco);
+    border-radius: 7px;
+    font-family: 'SuisseMed';
+    font-size: 1.3em;
+}
+.bienvenido{
+    max-width: 450px;
+    background-color: var(--blanco);
+    border-radius: 8px;
+    box-shadow: var(--violet);
+}
+p{
+    color: #000000;
+    font-size: 0.9em;
+}
+.score{
+    font-weight: bold;
+}
+.library{
+    background-color: var(--lilatr);
+}
+details{
+    font-size: 0.7em;
+}
+
+
 #result h2 {
     color: #000000;
     word-break: break-word;
@@ -126,88 +202,10 @@ h1, h2, h3 {
 }
 /*-fin--de---juego----*/
 
-.logo{
-    background: url("../res/img/logo-anime.svg") no-repeat 48px left;
-    font-size: 1.7em;
-    height:4rem;
-    color:white; 
-    position: absolute;
-    width: 230px;
-    line-height: 1.6rem;
+#navbarCollapse{
+    margin-top:0.6em;
 }
-.navbar-nav{
-    line-height: 1.5rem;
-}
-.navbar-collapse{
-    max-width: 570px;
-}
-.logo-link {
-  color: var(--blanco);
-}
-header {
-    padding: 7px;
-    text-align: center;
-    color: var(--blanco);
-}
-.main{
-	min-height: 100vh;  
-    background-color: var(--lilatr);    
-    color:var(--gris);
-}
-.bg1{
-    background-color: var(--violet);
-}
-.bg2{
-    background-color: var(--azul);
-    color: var(--rosa);
-}
-.bg3{
-    background-color: var(--lilatr);
-    color: var(--rosa);
-}
-.buscar form {
-	padding: 1.1em 0;
-}
-input.buscar{
-	padding: 0.45em 1em;
-	border-radius: 7px;
-	border: solid 1px;
-	border-color: var(--blanco);
-	outline: none;
-	font-size: 105%;
-	font-family: inherit;
-}
-.buscar button{
-	border: none;
-	border-radius: 7px;
-	height: 46px;
-	width: 46px;
-	outline: none;
-	padding: 0;
-}
-button{
-	background:var(--blanco); 
-}
-button:hover{
-	background:var(--lila);
-}
-#name{
-    color: #000000;
-}
-#genero{
-    font-weight: bold;
-}
-#buscar-home{
-    background:var(--azul);
-    color:var(--violet);
-    border-color: var(--blanco);
-    border-radius: 7px;
-    font-family: 'SuisseMed';
-    font-size: 1.3em;
-}
-footer {
-    background-color: var(--azul);
-}
+/*---offline---*/
 body.offline .offline-banner {
     transition: all 0.5s;
 }
@@ -239,6 +237,10 @@ body:not(.offline) .offline-banner-html {
 .offline-banner-html{
     width:100%;
 }
+/*---footer---*/
+footer {
+    background-color: var(--azul);
+}
 .btn-rss {
     background-size: 100%;
     background-position: center;
@@ -259,23 +261,4 @@ body:not(.offline) .offline-banner-html {
 
 .youtube {
     background-image: url(../res/img/icon/youtube.svg);
-}
-.bienvenido{
-    max-width: 450px;
-    background-color: var(--blanco);
-    border-radius: 8px;
-    box-shadow: var(--violet);
-}
-p{
-    color: #000000;
-    font-size: 0.9em;
-}
-.score{
-    font-weight: bold;
-}
-.library{
-    background-color: var(--lilatr);
-}
-details{
-    font-size: 0.7em;
 }
