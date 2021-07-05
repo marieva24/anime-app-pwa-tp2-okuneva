@@ -163,16 +163,16 @@ details{
 }
 /*-----juego----*/
 .grid {
-    width: 288px;
-    height: 288px;
+    width: 285px;
+    height: 285px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square {
     background-color: var(--azul);
-    height: 94px;
-    width: 94px;
+    height: 93px;
+    width: 93px;
     border: solid var(--lila) 1px;
 }
 .mole {
